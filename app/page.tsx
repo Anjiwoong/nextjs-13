@@ -1,12 +1,13 @@
-import { Inter } from '@next/font/google';
-import styles from './page.module.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import Header from './components/Header';
+import RestaurantCard from './components/RestaurantCard';
 
 export default function Home() {
   return (
     <main>
-      <h1>Hello there everyone</h1>
+      <Header />
+      <div className="py-3 px-36 mt-10 flex flex-wrap flex-start">
+        <RestaurantCard />
+      </div>
     </main>
   );
 }
